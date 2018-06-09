@@ -54,6 +54,6 @@ parts:
       - wget
       - xz-utils
     build: |
-      make
+      make | grep -E --color=never 'error:|.vala:.*warning:' | grep -E --color=always "error:|$"
     install: |
       DESTDIR=$SNAPCRAFT_PART_INSTALL make install
