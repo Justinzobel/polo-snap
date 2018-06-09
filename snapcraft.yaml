@@ -21,6 +21,7 @@ parts:
     build-packages:
       - libgee-0.8-dev
       - libvte-2.91-dev
+      - chrpath
       #- gnome-doc-utils
       #- gob2
       - libgtk3.0-dev
