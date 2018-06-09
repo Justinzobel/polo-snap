@@ -54,7 +54,7 @@ parts:
       - tar
       - wget
       - xz-utils
-   build: |
+    build: |
       make
     install: |
       DESTDIR=$SNAPCRAFT_PART_INSTALL make install
