@@ -49,7 +49,6 @@ parts:
       - pv
       - qemu-kvm
       - qemu-utils
-      - rclone
       - rsync
       - tar
       - wget
