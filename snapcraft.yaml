@@ -20,42 +20,41 @@ parts:
     source: https://github.com/teejee2008/polo/archive/v18.3-beta.tar.gz
     build-packages:
       - autotools-dev
-      - valac
-      - libgtk-3-dev
       - libgee-0.8-dev
-      - libvte-2.91-dev
+      - libgtk-3-dev
       - libjson-glib-dev
+      - libvte-2.91-dev
       - libxml2-dev
+      - valac
       
     stage-packages:
-      - p7zip
-      - gvfs
-      - rsync
-      - rclone
-      - pv
-      - lzop
-      - libvte-2.91
-      - libgee-0.8-2
-      - libvte-2.91-0
-      - libjson-glib-1.0-0
-      - libxml2
+      - bzip2 
       - ffmpeg
+      - fish
+      - gvfs
+      - gvfs-backends
+      - gvfs-bin
+      - gzip 
+      - libgee-0.8-2
+      - libjson-glib-1.0-0
+      - libvte-2.91-0
+      - libxml2
+      - lzop
       - mediainfo
+      - p7zip
       - p7zip-full
       - p7zip-rar
-      - tar
-      - gzip 
-      - pigz
-      - bzip2 
       - pbzip2
-      - xz-utils
-      - fish
+      - pigz
+      - pv
       - qemu-kvm
       - qemu-utils
-      - gvfs-bin
-      - gvfs-backends
+      - rclone
+      - rsync
+       - tar
       - wget
-    build: |
+      - xz-utils
+   build: |
       make
     install: |
       DESTDIR=$SNAPCRAFT_PART_INSTALL make install
