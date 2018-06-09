@@ -51,7 +51,7 @@ parts:
       - qemu-utils
       - rclone
       - rsync
-       - tar
+      - tar
       - wget
       - xz-utils
    build: |
